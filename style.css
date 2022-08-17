@@ -1,8 +1,60 @@
 *,
 *:before,
 *:after {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
+  color: #172B4D;
+}
+
+body{
+    margin: 0;
+}
+.container {
+    display: flex;
+}
+
+header{
+    margin: 24px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo-placeholder {
+    font-size: 20px;
+    font-weight: 500;
+    color: #28352F;
+}
+
+h1{
+    font-size: 40px;
+}
+
+.color-green{
+    color: #36B37E;
+}
+
+p{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+#headline{
+    flex-direction: column;
+    align-items: center;
+    padding: 58px 24px 0 24px;
+    text-align: center;
+    background-image: url("images/header-illsutration-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+
+}
+#social-media{
+    margin-top: 58px;
 }
