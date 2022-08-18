@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Hello Microverse
+# My Portfolio
 
-> In this project, I wil be building a proffessional looking Portfolio website using one of the Figma templates provided by Microverse. 
+> In this project, I wil be building a professional looking Portfolio website using one of the Figma templates provided by Microverse. 
 
 ## Built With
 
