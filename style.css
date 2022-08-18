@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  color: #172b4d;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+.container {
+  display: flex;
+}
+
+/* styling the header */
+header {
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px;
+  color: #28352f;
+}
+
+#logo-placeholder {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* i added this to remove some white space that appeared
+after i put the burger menu inside a navbar */
+#burger-menu {
+  display: block;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.color-green {
+  color: #36b37e;
+}
+
+/* styling the headline section */
+#headline {
+  flex-direction: column;
+  align-items: center;
+  padding: 58px 24px 24px 24px;
+  text-align: center;
+  background-image: url("images/header-illsutration-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+p {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+}
+
+#social-media {
+  margin: 58px 0 0 0;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  justify-content: center;
+}
+
+#social-media > li {
+  display: inline;
+  margin: 0;
+}
+
+#next {
+  background-image: url(images/Disabled.png);
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border: none;
+  margin-top: 70px;
+}
