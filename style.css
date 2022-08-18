@@ -3,8 +3,7 @@
 *::after {
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
-  color: #172b4d;
-  border: black solid 1px; 
+  color: #172b4d; 
 }
 
 body {
