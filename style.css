@@ -23,7 +23,7 @@ a {
 header {
   justify-content: space-between;
   align-items: center;
-  margin: 0 24px;
+  margin: 24px;
   color: #28352f;
 }
 
@@ -79,4 +79,13 @@ p {
 #social-media > li {
   display: inline;
   margin: 0;
+}
+
+#next {
+  background-image: url(images/Disabled.png);
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border: none;
+  margin-top: 70px;
 }
