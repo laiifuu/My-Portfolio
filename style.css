@@ -4,12 +4,17 @@
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
   color: #172b4d;
+  border: black solid 1px; 
 }
 
 body {
   margin: 0;
 }
 
+a{
+  text-decoration: none;
+  display: block;
+}
 .container {
   display: flex;
 }
@@ -18,13 +23,19 @@ body {
 header {
   justify-content: space-between;
   align-items: center;
-  margin: 24px;
+  margin:  0 24px;
   color: #28352f;
 }
 
 #logo-placeholder {
   font-size: 20px;
   font-weight: 500;
+}
+
+/* i added this to remove some white space that appeared 
+after i put the burger menu inside a navbar */
+#burger-menu{
+  display: block;
 }
 
 h1 {
@@ -58,5 +69,16 @@ p {
 }
 
 #social-media {
-  margin-top: 58px;
+  margin: 58px 0 0 0;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  justify-content: center;
+  
 }
+
+#social-media > li{ 
+  display: inline;
+  margin: 0;
+}
+
