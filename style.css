@@ -13,40 +13,41 @@ body{
     display: flex;
 }
 
-header{
-    margin: 24px;
+/* styling the header */
+header {
     justify-content: space-between;
     align-items: center;
+    margin: 24px;
+    color: #28352F;
 }
 
 #logo-placeholder {
     font-size: 20px;
     font-weight: 500;
-    color: #28352F;
 }
 
 h1{
     font-size: 40px;
 }
 
-.color-green{
+.color-green {
     color: #36B37E;
 }
 
-p{
-    font-weight: 400;
-    font-size: 20px;
-}
-
-#headline{
+/* styling the headline section */
+#headline {
     flex-direction: column;
     align-items: center;
-    padding: 58px 24px 0 24px;
+    padding: 58px 24px 24px 24px;
     text-align: center;
     background-image: url("images/header-illsutration-mobile.png");
     background-repeat: no-repeat;
     background-size: cover;
-    
+}
+
+p {
+    font-weight: 400;
+    font-size: 20px;
 }
 
 .icon{
@@ -55,6 +56,7 @@ p{
     margin: 10px;
 
 }
+
 #social-media{
     margin-top: 58px;
 }
