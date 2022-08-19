@@ -28,7 +28,6 @@ p {
   font-size: 20px;
 }
 
-
 .flex-container {
   display: flex;
 }
@@ -39,8 +38,8 @@ p {
 
 .call-to-action {
   background-color: #36b37e;
-  border: 0px;
-  color: #ffffff;
+  border: 0;
+  color: #fff;
   border-radius: 4px;
   font-size: 17px;
   padding: 12px;
@@ -66,7 +65,6 @@ li {
   display: inline;
   margin: 0;
 }
-
 
 #logo-placeholder {
   font-size: 20px;
@@ -94,7 +92,6 @@ after i put the burger menu inside a navbar */
   background-size: contain;
 }
 
-
 .icon {
   width: 20px;
   height: 20px;
@@ -104,7 +101,6 @@ after i put the burger menu inside a navbar */
 #social-media {
   margin: 58px 0 0 0;
 }
-
 
 #next {
   background-image: url(images/Disabled.png);
@@ -137,6 +133,7 @@ after i put the burger menu inside a navbar */
   border-radius: 8px;
   border: 1px solid #d0d9d4;
 }
+
 .image-placeholder {
   height: 250px;
   background-color: #ebf0ee;
@@ -145,11 +142,13 @@ after i put the burger menu inside a navbar */
 .card-info {
   border-radius: 8px;
 }
+
 .categories {
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
 }
+
 .category {
   padding: 12px 8px 12px 8px;
   font-size: 12px;
@@ -159,7 +158,6 @@ after i put the burger menu inside a navbar */
 .card-info > ul > li {
   background-color: #ebf0ee;
 }
-
 
 /* styling the about me section */
 #about-me {
@@ -185,8 +183,7 @@ after i put the burger menu inside a navbar */
 }
 
 .skills-card > ul > li {
-  background-color: #ffffff;
+  background-color: #fff;
   color: #36b37e;
   font-weight: 600;
 }
-
