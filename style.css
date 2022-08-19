@@ -2,7 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #172b4d;
 }
 
@@ -15,8 +15,35 @@ a {
   display: block;
 }
 
-.container {
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.flex-container {
   display: flex;
+}
+
+.grid-container {
+  display: grid;
+}
+
+.call-to-action {
+  background-color: #36b37e;
+  border: 0;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 17px;
+  padding: 12px;
+  margin-bottom: 24px;
 }
 
 /* styling the header */
@@ -25,6 +52,18 @@ header {
   align-items: center;
   margin: 24px;
   color: #28352f;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  justify-content: center;
+}
+
+li {
+  display: inline;
+  margin: 0;
 }
 
 #logo-placeholder {
@@ -36,10 +75,6 @@ header {
 after i put the burger menu inside a navbar */
 #burger-menu {
   display: block;
-}
-
-h1 {
-  font-size: 40px;
 }
 
 .color-green {
@@ -54,12 +89,7 @@ h1 {
   text-align: center;
   background-image: url("images/header-illsutration-mobile.png");
   background-repeat: no-repeat;
-  background-size: cover;
-}
-
-p {
-  font-weight: 400;
-  font-size: 20px;
+  background-size: contain;
 }
 
 .icon {
@@ -70,22 +100,90 @@ p {
 
 #social-media {
   margin: 58px 0 0 0;
-  list-style: none;
-  padding: 0;
-  width: 100%;
-  justify-content: center;
-}
-
-#social-media > li {
-  display: inline;
-  margin: 0;
 }
 
 #next {
   background-image: url(images/Disabled.png);
   background-color: transparent;
-  width: 40px;
-  height: 40px;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
   border: none;
-  margin-top: 70px;
+  margin-top: 50px;
+}
+
+/* styling the recent works section */
+
+.indicator {
+  border: 2px #36b37e solid;
+  border-radius: 8px;
+  width: 48px;
+  margin: 24px auto 62px auto;
+}
+
+#projects,
+#skills {
+  padding: 24px;
+  text-align: center;
+  gap: 24px;
+}
+
+/* styling the project card */
+.project-card {
+  border-radius: 8px;
+  border: 1px solid #d0d9d4;
+}
+
+.image-placeholder {
+  height: 250px;
+  background-color: #ebf0ee;
+}
+
+.card-info {
+  border-radius: 8px;
+}
+
+.categories {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.category {
+  padding: 12px 8px 12px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.card-info > ul > li {
+  background-color: #ebf0ee;
+}
+
+/* styling the about me section */
+#about-me {
+  background-image: url("images/aboutme-illustration-mobile.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 24px;
+  text-align: center;
+}
+
+/* styling the skills section */
+.skills-card {
+  height: 350px;
+  background-color: #ebf0ee;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: space-around;
+  align-content: center;
+  padding: 40px 0 24px 0;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
+
+.skills-card > ul > li {
+  background-color: #fff;
+  color: #36b37e;
+  font-weight: 600;
 }

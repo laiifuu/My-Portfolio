@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <header class="container">
+    <header class="flex-container">
       <a href="#" id="logo-placeholder">Welcome</a>
 
       <nav>
@@ -23,7 +23,7 @@
       </nav>
     </header>
 
-    <section id="headline" class="container">
+    <section id="headline" class="flex-container">
       <h1>
         Hey there. I’m Hayet <br />
         <span class="color-green">I’m a software developer</span>
@@ -34,17 +34,194 @@
         need coded, don’t hesitiate to contact me.
       </p>
 
-      <ul id="social-media" class="container">
-        <li><a href="https://twitter.com/hayet_fe"> <img src="images/twitter.png" alt="twiiter icon" class="icon" /></a></li>
-        <li><a href="https://www.linkedin.com/in/hayet-f-5b4347247/"><img src="images/linkedin.png" alt="linkedin icon" class="icon" /></a></li>
-        <li><a href="#"> <img src="images/medium.png" alt="medium icon" class="icon" /></a></li>
-        <li><a href="https://github.com/laiifuu"><img src="images/github.png" alt="github icon" class="icon" /></a></li>
-        <li><a href="#"><img src="images/angellist.png" alt="angellist icon" class="icon" /></a></li>
+      <ul id="social-media" class="flex-container">
+        <li>
+          <a href="https://twitter.com/hayet_fe">
+            <img src="images/twitter.png" alt="twiiter icon" class="icon"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/hayet-f-5b4347247/"
+            ><img src="images/linkedin.png" alt="linkedin icon" class="icon"
+          /></a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/medium.png" alt="medium icon" class="icon"
+          /></a>
+        </li>
+        <li>
+          <a href="https://github.com/laiifuu"
+            ><img src="images/github.png" alt="github icon" class="icon"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img src="images/angellist.png" alt="angellist icon" class="icon"
+          /></a>
+        </li>
       </ul>
 
-      <button id="next">
+      <button id="next" type="submit"></button>
+    </section>
 
-      </button>
+    <section id="projects" class="grid-container">
+      <h1>My Recent Works</h1>
+      <div class="indicator"></div>
+      <article class="project-card">
+        <div class="image-placeholder"></div>
+        <div class="card-info">
+          <h2>Multi-Post Stories Gain+Glory</h2>
+          <ul class="categories flex-container">
+            <li class="category">
+              <a href="https://github.com/topics/ruby-on-rails"
+                >Ruby on Rails</a
+              >
+            </li>
+            <li class="category">
+              <a href="https://github.com/topics/css">css</a>
+            </li>
+            <li class="category">
+              <a href="https://github.com/topics/html">html</a>
+            </li>
+            <li class="category">
+              <a href="https://github.com/topics/javascript">JavaScript</a>
+            </li>
+          </ul>
+          <button class="call-to-action" type="submit">See Project</button>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="image-placeholder"></div>
+        <div class="card-info">
+          <h2>Multi-Post Stories Gain+Glory</h2>
+          <ul class="categories flex-container">
+            <li class="category">
+              <a href="https://github.com/topics/ruby-on-rails"
+                >Ruby on Rails</a
+              >
+            </li>
+            <li class="category">
+              <a href="https://github.com/topics/css">css</a>
+            </li>
+            <li class="category">
+              <a href="https://github.com/topics/html">html</a>
+            </li>
+            <li class="category">
+              <a href="https://github.com/topics/javascript">JavaScript</a>
+            </li>
+          </ul>
+          <button class="call-to-action" type="submit">See Project</button>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="image-placeholder"></div>
+        <div class="card-info">
+          <h2>Multi-Post Stories Gain+Glory</h2>
+          <ul class="categories flex-container">
+            <li class="category">
+              <a href="https://github.com/topics/ruby-on-rails"
+                >Ruby on Rails</a
+              >
+            </li>
+            <li class="category">
+              <a href="https://github.com/topics/css">css</a>
+            </li>
+            <li class="category">
+              <a href="https://github.com/topics/html">html</a>
+            </li>
+            <li class="category">
+              <a href="https://github.com/topics/javascript">JavaScript</a>
+            </li>
+          </ul>
+          <button class="call-to-action" type="submit">See Project</button>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="image-placeholder"></div>
+        <div class="card-info">
+          <h2>Multi-Post Stories Gain+Glory</h2>
+          <ul class="categories flex-container">
+            <li class="category">
+              <a href="https://github.com/topics/ruby-on-rails"
+                >Ruby on Rails</a
+              >
+            </li>
+            <li class="category">
+              <a href="https://github.com/topics/css">css</a>
+            </li>
+            <li class="category">
+              <a href="https://github.com/topics/html">html</a>
+            </li>
+            <li class="category">
+              <a href="https://github.com/topics/javascript">JavaScript</a>
+            </li>
+          </ul>
+          <button class="call-to-action" type="submit">See Project</button>
+        </div>
+      </article>
+    </section>
+
+    <section id="about-me">
+      <h1>About me</h1>
+      <p>
+        I can help you build a product , feature or website Look through some of
+        my work and experience! If you like what you see and have a project you
+        need coded, don’t hestiate to contact me.
+      </p>
+      <button class="call-to-action" type="submit">Get My Resume</button>
+    </section>
+
+    <section id="skills">
+      <div class="skills-card">
+        <img
+          src="images/icon-languages.png"
+          alt="Languages icon"
+          class="skills-icon"
+        />
+        <h2>Languages</h2>
+        <ul class="flex-container categories">
+          <li class="category">JavaScript</li>
+          <li class="category">Ruby</li>
+          <li class="category">Html</li>
+          <li class="category">Css</li>
+        </ul>
+      </div>
+
+      <div class="skills-card">
+        <img
+          src="images/icon-frameworks.png"
+          alt="Fraweworks icon"
+          class="skills-icon"
+        />
+        <h2>Frameworks</h2>
+        <ul class="flex-container categories">
+          <li class="category">Bootstrap</li>
+          <li class="category">Ruby on rails</li>
+          <li class="category">RSpec</li>
+          <li class="category">Capybara</li>
+          <li class="category">Selenium</li>
+        </ul>
+      </div>
+
+      <div class="skills-card">
+        <img
+          src="images/icon-skills.png"
+          alt="Skills icon"
+          class="skills-icon"
+        />
+        <h2>Skills</h2>
+        <ul class="flex-container categories">
+          <li class="category">Codekit</li>
+          <li class="category">Github</li>
+          <li class="category">Codepen</li>
+          <li class="category">Gitlab</li>
+          <li class="category">Terminal</li>
+        </ul>
+      </div>
     </section>
   </body>
 </html>
