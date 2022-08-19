@@ -2,9 +2,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #172b4d;
-  /*border:1px solid #172b4d;*/
 }
 
 body {
@@ -16,12 +15,36 @@ a {
   display: block;
 }
 
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+
 .flex-container {
   display: flex;
 }
 
-.grid-container{
+.grid-container {
   display: grid;
+}
+
+.call-to-action {
+  background-color: #36b37e;
+  border: 0px;
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 17px;
+  padding: 12px;
+  margin-bottom: 24px;
 }
 
 /* styling the header */
@@ -32,6 +55,19 @@ header {
   color: #28352f;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  justify-content: center;
+}
+
+li {
+  display: inline;
+  margin: 0;
+}
+
+
 #logo-placeholder {
   font-size: 20px;
   font-weight: 500;
@@ -41,10 +77,6 @@ header {
 after i put the burger menu inside a navbar */
 #burger-menu {
   display: block;
-}
-
-h1 {
-  font-size: 40px;
 }
 
 .color-green {
@@ -62,10 +94,6 @@ h1 {
   background-size: contain;
 }
 
-p {
-  font-weight: 400;
-  font-size: 20px;
-}
 
 .icon {
   width: 20px;
@@ -73,20 +101,10 @@ p {
   margin: 10px;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-  width: 100%;
-  justify-content: center;
-}
 #social-media {
   margin: 58px 0 0 0;
 }
 
-li {
-  display: inline;
-  margin: 0;
-}
 
 #next {
   background-image: url(images/Disabled.png);
@@ -99,52 +117,76 @@ li {
 }
 
 /* styling the recent works section */
-h2{
-  font-size: 24px;
-}
 
-.indicator{
-  border:2px #36b37e solid; 
+.indicator {
+  border: 2px #36b37e solid;
   border-radius: 8px;
   width: 48px;
   margin: 24px auto 62px auto;
 }
 
-#projects {
-  margin: 24px;
+#projects,
+#skills {
+  padding: 24px;
   text-align: center;
   gap: 24px;
 }
 
 /* styling the project card */
-.project-card{
+.project-card {
   border-radius: 8px;
-  border: 1px solid #D0D9D4 ;
+  border: 1px solid #d0d9d4;
 }
-.image-placeholder{
+.image-placeholder {
   height: 250px;
-  background-color:#EBF0EE ;
+  background-color: #ebf0ee;
 }
 
-.card-info{
+.card-info {
   border-radius: 8px;
 }
-.categories{
-  justify-content: space-around;
+.categories {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
-.category{
+.category {
   padding: 12px 8px 12px 8px;
   font-size: 12px;
-  background-color:#EBF0EE ;
   border-radius: 4px;
 }
 
-.call-to-action{
-  background-color: #36b37e;
-  border: 0px;
-  color: #FFFFFF;
-  border-radius: 4px;
-  font-size: 17px;
-  padding: 12px;
-  margin-bottom: 24px;
+.card-info > ul > li {
+  background-color: #ebf0ee;
 }
+
+
+/* styling the about me section */
+#about-me {
+  background-image: url("images/aboutme-illustration-mobile.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 24px;
+  text-align: center;
+}
+
+/* styling the skills section */
+.skills-card {
+  height: 350px;
+  background-color: #ebf0ee;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: space-around;
+  align-content: center;
+  padding: 40px 0 24px 0;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
+
+.skills-card > ul > li {
+  background-color: #ffffff;
+  color: #36b37e;
+  font-weight: 600;
+}
+
