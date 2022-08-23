@@ -187,3 +187,8 @@ after i put the burger menu inside a navbar */
   color: #36b37e;
   font-weight: 600;
 }
+
+/* styling the contact me section */ 
+#contact-form{
+  flex-direction: column;
+}
