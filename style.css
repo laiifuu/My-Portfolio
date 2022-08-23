@@ -188,16 +188,17 @@ after i put the burger menu inside a navbar */
   font-weight: 600;
 }
 
-/* styling the contact me section */ 
-#contact-form{
+/* styling the contact me section */
+#contact-form {
   flex-direction: column;
   padding: 24px;
   justify-content: center;
   text-align: center;
-  background-image: url('images/contact-me-illustration-mobile.png') ;
+  background-image: url('images/contact-me-illustration-mobile.png');
   background-repeat: no-repeat;
   background-position: 100% 85%;
 }
+
 input {
   height: 48px;
   border: 1px solid #d0d9d4;
@@ -208,7 +209,8 @@ textarea {
   border: 1px solid #36b37e;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   margin-top: 12px;
   margin-bottom: 12px;
@@ -226,6 +228,6 @@ textarea::placeholder {
   color: #091e42;
 }
 
-#contact-form > ul{
+#contact-form > ul {
   margin: 24px 0 0 0;
 }
