@@ -46,6 +46,15 @@ p {
   margin-bottom: 24px;
 }
 
+.call-to-action:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.call-to-action:active {
+  background-color: #008552;
+  box-shadow: none;
+}
+
 /* styling the header */
 header {
   justify-content: space-between;
@@ -98,7 +107,7 @@ after i put the burger menu inside a navbar */
   margin: 10px;
 }
 
-#social-media {
+.social-media {
   margin: 58px 0 0 0;
 }
 
@@ -186,4 +195,54 @@ after i put the burger menu inside a navbar */
   background-color: #fff;
   color: #36b37e;
   font-weight: 600;
+}
+
+/* styling the contact me section */
+#contact-form {
+  flex-direction: column;
+  padding: 24px;
+  justify-content: center;
+  text-align: center;
+  background-image: url('images/contact-me-illustration-mobile.png');
+  background-repeat: no-repeat;
+  background-position: 100% 85%;
+}
+
+input {
+  height: 48px;
+  border: 1px solid #d0d9d4;
+}
+
+textarea {
+  height: 120px;
+  border: 1px solid #36b37e;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  line-height: 24px;
+  padding: 16px;
+  border-radius: 4px;
+}
+
+form {
+  margin-top: 58px;
+}
+
+textarea::placeholder {
+  opacity: 1;
+  color: #091e42;
+}
+
+#contact-form > ul {
+  margin: 24px 0 0 0;
+}
+
+.end-page {
+  border: 2px solid black;
+  width: 120px;
+  margin: 320px auto 10px auto;
 }
