@@ -191,4 +191,32 @@ after i put the burger menu inside a navbar */
 /* styling the contact me section */ 
 #contact-form{
   flex-direction: column;
+  margin: 24px;
+  justify-content: center;
+  text-align: center;
+}
+input {
+  height: 48px;
+  border: 1px solid #d0d9d4;
+}
+
+textarea {
+  height: 120px;
+  border: 1px solid #36b37e;
+}
+
+input, textarea {
+  width: 100%;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  line-height: 24px;
+  padding: 16px;
+  border-radius: 4px;
+}
+form {
+  margin-top: 58px;
+}
+textarea::placeholder {
+  opacity: 1;
+  color: #091e42;
 }
