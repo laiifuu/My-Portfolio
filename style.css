@@ -46,14 +46,15 @@ p {
   margin-bottom: 24px;
 }
 
-.call-to-action:hover{
-  box-shadow:0px 8px 16px rgba(54, 179, 127, 0.24);
+.call-to-action:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
-.call-to-action:active{
+.call-to-action:active {
   background-color: #008552;
   box-shadow: none;
 }
+
 /* styling the header */
 header {
   justify-content: space-between;
@@ -242,6 +243,6 @@ textarea::placeholder {
 
 .end-page {
   border: 2px solid black;
-  width: 120px; 
+  width: 120px;
   margin: 320px auto 10px auto;
 }
