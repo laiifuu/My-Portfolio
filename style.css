@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   color: #172b4d;
+  border: 1px solid black;
 }
 
 body {
@@ -80,6 +81,9 @@ li {
   font-weight: 500;
 }
 
+#nav_menu {
+  display: none;
+}
 /* i added this to remove some white space that appeared
 after i put the burger menu inside a navbar */
 #burger-menu {
@@ -258,9 +262,67 @@ footer > .social-media{
 }
 
 @media screen and (min-width: 430px){
-  body{
-    width: 430px;
-    margin: 0 auto 0 auto;
-    border: 1px solid #d0d9d4;
+  #logo-placeholder, #burger-menu{
+    display: none;
   }
+
+  /* styling the header */ 
+  header{
+    margin: 16px;
+    justify-content: center;
+    align-content: center;
+  }
+
+  #nav_menu {
+    display: flex;
+  }
+
+  nav > ul{
+    margin: 0;
+  }
+
+  nav > ul > li {
+    padding: 10px 12px 12px 10px;
+    font-weight: 600;
+  }
+
+  #headline{
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center; 
+    gap: 24px;
+    padding-top: 30%;
+  }
+
+  #headline > * {
+    margin: 0;
+  }
+
+  #headline button {
+    align-self: bottom;
+    justify-content: bottom;
+  }
+
+}
+
+@media screen and (min-width: 600px) {
+  .indicator{
+    display: none;
+  }
+  #projects, #skills {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  #projects > h1 {
+    grid-column: span 2;
+  }
+
+  .skills-card{
+    grid-column: span 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  
 }
