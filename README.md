@@ -32,7 +32,7 @@ Click on the "Code" button, a dropdown list will appear, click on "Download ZIP"
 
 ### Deployment
 
-Extract the project folder from the downloaded ZIP file, then open the index.html file with
+Extract the project folder from the downloaded ZIP file, then open it, you will find a file named index.html, open it with your browser. 
 
 ## Authors
 
