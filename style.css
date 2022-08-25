@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   color: #172b4d;
+  border: 1px solid black;
 }
 
 body {
@@ -205,7 +206,7 @@ after i put the burger menu inside a navbar */
   text-align: center;
   background-image: url('images/contact-me-illustration-mobile.png');
   background-repeat: no-repeat;
-  background-position: 100% 85%;
+  background-position: 100% 100%;
 }
 
 input {
@@ -245,4 +246,14 @@ textarea::placeholder {
   border: 2px solid black;
   width: 120px;
   margin: 320px auto 10px auto;
+}
+
+footer{
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > .social-media{
+  margin-top: 0;
 }
