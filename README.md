@@ -13,6 +13,27 @@
 
 [Live Demo Link](https://laiifuu.github.io/My-Portfolio/)
 
+## Preview
+
+![Alt text](/images/screenshot-preview.PNG)
+
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+- A web browser 
+- A code editor
+
+### Setup
+
+Click on the "Code" button, a dropdown list will appear, click on "Download ZIP".
+
+### Deployment
+
+Extract the project folder from the downloaded ZIP file, then open the index.html file with
+
 ## Authors
 
 👤 **Fellah Hayet**
