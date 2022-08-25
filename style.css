@@ -48,6 +48,7 @@ p {
   font-size: 17px;
   padding: 12px;
   margin-bottom: 24px;
+  cursor: pointer;
 }
 
 .call-to-action:hover {
