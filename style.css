@@ -4,7 +4,6 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   color: #172b4d;
-  border: 1px solid black;
 }
 
 body {
@@ -97,9 +96,9 @@ after i put the burger menu inside a navbar */
   align-items: center;
   padding: 58px 24px 24px 24px;
   text-align: center;
-  background-image: url("images/header-illsutration-mobile.png");
+  background-image: url('images/header-illsutration-mobile.svg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size:100% auto;
 }
 
 .icon {
@@ -256,4 +255,12 @@ footer{
 
 footer > .social-media{
   margin-top: 0;
+}
+
+@media screen and (min-width: 430px){
+  body{
+    width: 430px;
+    margin: 0 auto 0 auto;
+    border: 1px solid #d0d9d4;
+  }
 }
