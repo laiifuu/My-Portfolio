@@ -6,6 +6,10 @@
   color: #172b4d;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
 }
@@ -44,6 +48,7 @@ p {
   font-size: 17px;
   padding: 12px;
   margin-bottom: 24px;
+  cursor: pointer;
 }
 
 .call-to-action:hover {
@@ -80,6 +85,10 @@ li {
   font-weight: 500;
 }
 
+#nav_menu {
+  display: none;
+}
+
 /* i added this to remove some white space that appeared
 after i put the burger menu inside a navbar */
 #burger-menu {
@@ -96,9 +105,9 @@ after i put the burger menu inside a navbar */
   align-items: center;
   padding: 58px 24px 24px 24px;
   text-align: center;
-  background-image: url("images/header-illsutration-mobile.png");
+  background-image: url('images/header-illsutration-mobile.svg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100% auto;
 }
 
 .icon {
@@ -178,6 +187,12 @@ after i put the burger menu inside a navbar */
 }
 
 /* styling the skills section */
+
+#skills {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .skills-card {
   height: 350px;
   background-color: #ebf0ee;
@@ -198,14 +213,14 @@ after i put the burger menu inside a navbar */
 }
 
 /* styling the contact me section */
-#contact-form {
+#contact-section {
   flex-direction: column;
   padding: 24px;
   justify-content: center;
   text-align: center;
   background-image: url('images/contact-me-illustration-mobile.png');
   background-repeat: no-repeat;
-  background-position: 100% 85%;
+  background-position: 100% 100%;
 }
 
 input {
@@ -245,4 +260,252 @@ textarea::placeholder {
   border: 2px solid black;
   width: 120px;
   margin: 320px auto 10px auto;
+}
+
+footer {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > .social-media {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 430px) {
+  #logo-placeholder,
+  #burger-menu {
+    display: none;
+  }
+
+  /* styling the header */
+  header {
+    margin: 16px;
+    justify-content: center;
+    align-content: center;
+  }
+
+  #nav_menu {
+    display: flex;
+  }
+
+  nav > ul {
+    margin: 0;
+  }
+
+  nav > ul > li {
+    padding: 10px 12px 12px 10px;
+    font-weight: 600;
+  }
+
+  #headline {
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    padding-top: 30%;
+  }
+
+  #headline > * {
+    margin: 0;
+  }
+
+  #headline button {
+    align-self: bottom;
+    justify-content: bottom;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .indicator {
+    display: none;
+  }
+
+  #projects {
+    margin-top: 0;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  #projects > h1 {
+    grid-column: span 2;
+  }
+
+  #skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .skills-card {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* some element styling */
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 32px;
+    width: 80%;
+  }
+
+  #logo-placeholder,
+  #burger-menu {
+    display: none;
+  }
+
+  /* styling the header */
+  header {
+    margin: 16px;
+    justify-content: center;
+    align-content: center;
+    line-height: 20px;
+    font-size: 15px;
+  }
+
+  nav > ul {
+    margin: 0;
+  }
+
+  nav > ul > li {
+    padding: 10px 12px 12px 10px;
+    font-weight: 600;
+  }
+
+  /* styling the headline section */
+  #headline {
+    padding: 0 10% 0 10%;
+    background-image: none;
+    height: 600px;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    gap: 24px;
+    justify-content: center;
+  }
+
+  #headline > h1,
+  p,
+  .social-media {
+    margin: 0;
+  }
+
+  body {
+    background-image: url('images/header-llustration-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  /* styling the projects section */
+  #projects {
+    width: 80%;
+    margin: 0 auto 0 auto;
+    padding: 0;
+    gap: 24px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .indicator {
+    display: none;
+  }
+
+  #projects > h1,
+  #about-me > h1 {
+    font-size: 40px;
+    margin: 0;
+  }
+
+  #projects > h1 {
+    grid-column: span 3;
+  }
+
+  #about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 100px 10% 0 10%;
+    margin: 0 auto 0 auto;
+    background-image: url('images/illustration-about-me-2-desktop.svg'), url('images/illustration-about-me-1-desktop.svg');
+    background-position: 0 100%, 100% 30%;
+    background-size: 15%, 15%;
+  }
+
+  #about-me > * {
+    margin: 12px 0 12px 0;
+  }
+
+  #skills {
+    width: 80%;
+    margin: 0 auto 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .skills-card {
+    width: 30%;
+    height: 400px;
+  }
+
+  /* styling the contact section */
+  #contact-section {
+    width: 100%;
+    margin-top: 80px;
+    padding: 0 10% 0 10%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 24px;
+    background-image: url('images/illustration-1-contact-form-desktop.svg'), url('images/illustration-2-contact-form-desktop.svg'), url('images/contact-form-illustratoin-3-desktop.svg');
+    background-size: 15%, 10%, 15%;
+    background-position: 0 100%, 30% 90%, 100% 100%;
+    padding-bottom: 250px;
+  }
+
+  #contact-section > h1 {
+    font-size: 30px;
+    width: 35%;
+  }
+
+  #contact-section > .social-media {
+    width: 100%;
+    margin-top: 220px;
+  }
+
+  footer {
+    display: none;
+    border-top: 1px solid #dfe1e6;
+  }
+
+  footer > p {
+    display: none;
+  }
+
+  form {
+    width: 60%;
+    justify-content: flex-start;
+    margin-top: 0;
+    text-align: start;
+    gap: 24px;
+  }
+
+  .end-page {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  #projects {
+    margin-top: 400px;
+  }
 }
