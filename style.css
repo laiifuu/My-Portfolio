@@ -4,12 +4,12 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   color: #172b4d;
- /*  border: 1px solid black; */
 }
 
 html {
   scroll-behavior: smooth;
 }
+
 body {
   margin: 0;
 }
@@ -87,6 +87,7 @@ li {
 #nav_menu {
   display: none;
 }
+
 /* i added this to remove some white space that appeared
 after i put the burger menu inside a navbar */
 #burger-menu {
@@ -105,7 +106,7 @@ after i put the burger menu inside a navbar */
   text-align: center;
   background-image: url('images/header-illsutration-mobile.svg');
   background-repeat: no-repeat;
-  background-size:100% auto;
+  background-size: 100% auto;
 }
 
 .icon {
@@ -186,10 +187,11 @@ after i put the burger menu inside a navbar */
 
 /* styling the skills section */
 
-#skills{
+#skills {
   flex-direction: row;
   flex-wrap: wrap;
 }
+
 .skills-card {
   height: 350px;
   background-color: #ebf0ee;
@@ -210,7 +212,7 @@ after i put the burger menu inside a navbar */
 }
 
 /* styling the contact me section */
-#contact-section{
+#contact-section {
   flex-direction: column;
   padding: 24px;
   justify-content: center;
@@ -259,23 +261,24 @@ textarea::placeholder {
   margin: 320px auto 10px auto;
 }
 
-footer{
+footer {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
-footer > .social-media{
+footer > .social-media {
   margin-top: 0;
 }
 
-@media screen and (min-width: 430px){
-  #logo-placeholder, #burger-menu{
+@media screen and (min-width: 430px) {
+  #logo-placeholder,
+  #burger-menu {
     display: none;
   }
 
-  /* styling the header */ 
-  header{
+  /* styling the header */
+  header {
     margin: 16px;
     justify-content: center;
     align-content: center;
@@ -285,7 +288,7 @@ footer > .social-media{
     display: flex;
   }
 
-  nav > ul{
+  nav > ul {
     margin: 0;
   }
 
@@ -294,9 +297,9 @@ footer > .social-media{
     font-weight: 600;
   }
 
-  #headline{
+  #headline {
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
     gap: 24px;
     padding-top: 30%;
   }
@@ -309,16 +312,15 @@ footer > .social-media{
     align-self: bottom;
     justify-content: bottom;
   }
-
 }
 
 @media screen and (min-width: 600px) {
-  .indicator{
+  .indicator {
     display: none;
   }
 
   #projects {
-    margin-top: 0px;
+    margin-top: 0;
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
@@ -327,21 +329,20 @@ footer > .social-media{
     grid-column: span 2;
   }
 
-  #skills{
+  #skills {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .skills-card{
+  .skills-card {
     width: 40%;
   }
 }
 
 @media screen and (min-width: 768px) {
-
-  /* some element styling */ 
+  /* some element styling */
   h1 {
     font-size: 48px;
   }
@@ -350,18 +351,19 @@ footer > .social-media{
     font-size: 24px;
   }
 
-  p{
+  p {
     font-size: 20px;
     line-height: 32px;
     width: 80%;
   }
 
-  #logo-placeholder, #burger-menu{
+  #logo-placeholder,
+  #burger-menu {
     display: none;
   }
 
-  /* styling the header */ 
-  header{
+  /* styling the header */
+  header {
     margin: 16px;
     justify-content: center;
     align-content: center;
@@ -369,7 +371,7 @@ footer > .social-media{
     font-size: 15px;
   }
 
-  nav > ul{
+  nav > ul {
     margin: 0;
   }
 
@@ -378,35 +380,33 @@ footer > .social-media{
     font-weight: 600;
   }
 
-  /* styling the headline section */ 
-  #headline{
+  /* styling the headline section */
+  #headline {
     padding: 0 10% 0 10%;
     background-image: none;
     height: 600px;
-    width: 100% ;
+    width: 100%;
     margin: 0 auto 0 auto;
     gap: 24px;
     justify-content: center;
   }
 
-  #headline > h1, p, .social-media {
+  #headline > h1,
+  p,
+  .social-media {
     margin: 0;
   }
 
-  body{
+  body {
     background-image: url('images/header-llustration-desktop.svg');
     background-repeat: no-repeat;
-    background-size:100%;
-    
-
+    background-size: 100%;
   }
 
-
-  /* styling the projects section */ 
-
+  /* styling the projects section */
   #projects {
     width: 80%;
-    margin: 0px auto 0 auto;
+    margin: 0 auto 0 auto;
     padding: 0;
     gap: 24px;
     grid-template-columns: 1fr 1fr 1fr;
@@ -416,47 +416,47 @@ footer > .social-media{
     display: none;
   }
 
-  #projects > h1, #about-me > h1 {
+  #projects > h1,
+  #about-me > h1 {
     font-size: 40px;
-    margin: 0rem;
-  } 
+    margin: 0;
+  }
 
   #projects > h1 {
     grid-column: span 3;
   }
 
-  #about-me{
+  #about-me {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%; 
+    width: 100%;
     padding: 100px 10% 0 10%;
-    margin: 0px auto 0 auto;
+    margin: 0 auto 0 auto;
     background-image: url('images/illustration-about-me-2-desktop.svg'), url('images/illustration-about-me-1-desktop.svg');
     background-position: 0 100%, 100% 30%;
     background-size: 15%, 15%;
   }
 
-  #about-me > *{
+  #about-me > * {
     margin: 12px 0 12px 0;
   }
 
-  #skills{
+  #skills {
     width: 80%;
     margin: 0 auto 0 auto;
     display: flex;
     justify-content: center;
-
   }
 
-  .skills-card{
+  .skills-card {
     width: 30%;
     height: 400px;
   }
 
-  /* styling the contact section */ 
-  #contact-section{
+  /* styling the contact section */
+  #contact-section {
     width: 100%;
     margin-top: 80px;
     padding: 0 10% 0 10%;
@@ -465,13 +465,13 @@ footer > .social-media{
     justify-content: space-between;
     align-items: center;
     column-gap: 24px;
-    background-image: url('images/illustration-1-contact-form-desktop.svg'), url('images/illustration-2-contact-form-desktop.svg'),url('images/contact-form-illustratoin-3-desktop.svg');
+    background-image: url('images/illustration-1-contact-form-desktop.svg'), url('images/illustration-2-contact-form-desktop.svg'), url('images/contact-form-illustratoin-3-desktop.svg');
     background-size: 15%, 10%, 15%;
-    background-position:0 100%, 30% 90%, 100% 100%;
+    background-position: 0 100%, 30% 90%, 100% 100%;
     padding-bottom: 250px;
   }
 
-  #contact-section > h1{
+  #contact-section > h1 {
     font-size: 30px;
     width: 35%;
   }
@@ -479,14 +479,18 @@ footer > .social-media{
   #contact-section > .social-media {
     width: 100%;
     margin-top: 220px;
-   
   }
 
-  #contact-section > p {
+  footer {
+    display: none;
+    border-top: 1px solid #dfe1e6;
+  }
+
+  footer > p {
     display: none;
   }
 
-  form{
+  form {
     width: 60%;
     justify-content: flex-start;
     margin-top: 0;
@@ -494,16 +498,8 @@ footer > .social-media{
     gap: 24px;
   }
 
-  .end-page{
+  .end-page {
     display: none;
-  }
-
-  footer > p {
-    display: none;
-  }
-
-  footer{
-    border-top: 1px solid #DFE1E6;
   }
 }
 
