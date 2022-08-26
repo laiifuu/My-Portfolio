@@ -95,8 +95,20 @@ after i put the burger menu inside a navbar */
   display: block;
 }
 
-.color-green {
-  color: #36b37e;
+.green {
+  color: #d0d9d4;
+  animation-name: change-color;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes change-color {
+  from {
+    color: #d0d9d4;
+  }
+  to {
+    color: #008552;
+  }
 }
 
 /* styling the headline section */
@@ -105,7 +117,7 @@ after i put the burger menu inside a navbar */
   align-items: center;
   padding: 58px 24px 24px 24px;
   text-align: center;
-  background-image: url('images/header-illsutration-mobile.svg');
+  background-image: url("images/header-illsutration-mobile.svg");
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
@@ -218,7 +230,7 @@ after i put the burger menu inside a navbar */
   padding: 24px;
   justify-content: center;
   text-align: center;
-  background-image: url('images/contact-me-illustration-mobile.png');
+  background-image: url("images/contact-me-illustration-mobile.png");
   background-repeat: no-repeat;
   background-position: 100% 100%;
 }
@@ -399,7 +411,7 @@ footer > .social-media {
   }
 
   body {
-    background-image: url('images/header-llustration-desktop.svg');
+    background-image: url("images/header-llustration-desktop.svg");
     background-repeat: no-repeat;
     background-size: 100%;
   }
@@ -435,7 +447,8 @@ footer > .social-media {
     width: 100%;
     padding: 100px 10% 0 10%;
     margin: 0 auto 0 auto;
-    background-image: url('images/illustration-about-me-2-desktop.svg'), url('images/illustration-about-me-1-desktop.svg');
+    background-image: url("images/illustration-about-me-2-desktop.svg"),
+      url("images/illustration-about-me-1-desktop.svg");
     background-position: 0 100%, 100% 30%;
     background-size: 15%, 15%;
   }
@@ -466,7 +479,9 @@ footer > .social-media {
     justify-content: space-between;
     align-items: center;
     column-gap: 24px;
-    background-image: url('images/illustration-1-contact-form-desktop.svg'), url('images/illustration-2-contact-form-desktop.svg'), url('images/contact-form-illustratoin-3-desktop.svg');
+    background-image: url("images/illustration-1-contact-form-desktop.svg"),
+      url("images/illustration-2-contact-form-desktop.svg"),
+      url("images/contact-form-illustratoin-3-desktop.svg");
     background-size: 15%, 10%, 15%;
     background-position: 0 100%, 30% 90%, 100% 100%;
     padding-bottom: 250px;
