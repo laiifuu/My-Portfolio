@@ -95,16 +95,8 @@ after i put the burger menu inside a navbar */
   display: block;
 }
 
-.green{
-  color: #d0d9d4;
-  animation-name: change-color;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes change-color {
-  from {color:#d0d9d4}
-  to {color:#008552}
+.color-green {
+  color: #36b37e;
 }
 
 /* styling the headline section */
