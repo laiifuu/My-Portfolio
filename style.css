@@ -352,6 +352,15 @@ footer > .social-media {
   .skills-card {
     width: 40%;
   }
+
+  .box-shadow {
+    box-shadow: none;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  .box-shadow:hover {
+    box-shadow: 0 5px 15px 2px #008552;
+  }
 }
 
 @media screen and (min-width: 768px) {
