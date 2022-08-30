@@ -509,6 +509,10 @@ label {
     padding-bottom: 250px;
   }
 
+  footer > p {
+    display: none;
+  }
+
   #contact-section > p {
     font-size: 30;
     width: 35%;
@@ -522,10 +526,6 @@ label {
   footer {
     display: none;
     border-top: 1px solid #dfe1e6;
-  }
-
-  footer > p {
-    display: none;
   }
 
   form {
