@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   color: #172b4d;
+  border: 1px solid black;
 }
 
 html {
@@ -202,12 +203,13 @@ after i put the burger menu inside a navbar */
 /* styling the skills section */
 
 #skills {
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
 }
 
 .skills-card {
-  height: 350px;
   background-color: #ebf0ee;
   flex-direction: column;
   justify-items: center;
@@ -350,7 +352,6 @@ footer > .social-media {
   }
 
   #skills {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -483,7 +484,6 @@ footer > .social-media {
 
   .skills-card {
     width: 30%;
-    height: 400px;
   }
 
   /* styling the contact section */
@@ -506,7 +506,7 @@ footer > .social-media {
   }
 
   #contact-section > p {
-    font-size: 30px;
+    font-size: 30;
     width: 35%;
   }
 
