@@ -236,6 +236,12 @@ after i put the burger menu inside a navbar */
   background-position: 100% 100%;
 }
 
+#contact-section > p {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 58px;
+}
+
 input {
   height: 48px;
   border: 1px solid #d0d9d4;
@@ -499,7 +505,7 @@ footer > .social-media {
     padding-bottom: 250px;
   }
 
-  #contact-section > h1 {
+  #contact-section > p {
     font-size: 30px;
     width: 35%;
   }
