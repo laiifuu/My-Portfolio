@@ -41,7 +41,7 @@ p {
 }
 
 .call-to-action {
-  background-color: #36b37e;
+  background-color: #335b4e;
   border: 0;
   color: #fff;
   border-radius: 4px;
@@ -108,7 +108,7 @@ after i put the burger menu inside a navbar */
   }
 
   to {
-    color: #008552;
+    color: #335b4e;
   }
 }
 
@@ -202,12 +202,13 @@ after i put the burger menu inside a navbar */
 /* styling the skills section */
 
 #skills {
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
 }
 
 .skills-card {
-  height: 350px;
   background-color: #ebf0ee;
   flex-direction: column;
   justify-items: center;
@@ -221,7 +222,7 @@ after i put the burger menu inside a navbar */
 
 .skills-card > ul > li {
   background-color: #fff;
-  color: #36b37e;
+  color: #335b4e;
   font-weight: 600;
 }
 
@@ -234,6 +235,12 @@ after i put the burger menu inside a navbar */
   background-image: url("images/contact-me-illustration-mobile.png");
   background-repeat: no-repeat;
   background-position: 100% 100%;
+}
+
+#contact-section > p {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 58px;
 }
 
 input {
@@ -283,6 +290,10 @@ footer {
 
 footer > .social-media {
   margin-top: 0;
+}
+
+label {
+  display: none;
 }
 
 @media screen and (min-width: 430px) {
@@ -344,7 +355,6 @@ footer > .social-media {
   }
 
   #skills {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -477,7 +487,6 @@ footer > .social-media {
 
   .skills-card {
     width: 30%;
-    height: 400px;
   }
 
   /* styling the contact section */
@@ -499,8 +508,12 @@ footer > .social-media {
     padding-bottom: 250px;
   }
 
-  #contact-section > h1 {
-    font-size: 30px;
+  footer > p {
+    display: none;
+  }
+
+  #contact-section > p {
+    font-size: 30;
     width: 35%;
   }
 
@@ -512,10 +525,6 @@ footer > .social-media {
   footer {
     display: none;
     border-top: 1px solid #dfe1e6;
-  }
-
-  footer > p {
-    display: none;
   }
 
   form {

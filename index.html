@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Portfolio</title>
+    <title>Fellah Hayet's Portfolio</title>
   </head>
 
   <body>
@@ -19,7 +19,7 @@
       <a href="#" id="logo-placeholder">Welcome</a>
 
       <nav>
-        <img src="images/burger-menu.png" alt="menu icon" id="burger-menu" />
+        <img src="images/burger-menu.png" alt="menu" id="burger-menu" />
         <ul id="nav_menu" class="flex-container">
           <li>
             <a href="#projects">Portfolio</a>
@@ -48,27 +48,36 @@
       <ul class="flex-container social-media">
         <li>
           <a href="https://twitter.com/hayet_fe">
-            <img src="images/twitter.png" alt="twiiter icon" class="icon"
+            <img
+              src="images/twitter.png"
+              alt="see twitter profile"
+              class="icon"
           /></a>
         </li>
         <li>
           <a href="https://www.linkedin.com/in/hayet-f-5b4347247/"
-            ><img src="images/linkedin.png" alt="linkedin icon" class="icon"
+            ><img
+              src="images/linkedin.png"
+              alt="see linkedin profile"
+              class="icon"
           /></a>
         </li>
         <li>
           <a href="#">
-            <img src="images/medium.png" alt="medium icon" class="icon"
+            <img src="images/medium.png" alt="see medium profile" class="icon"
           /></a>
         </li>
         <li>
           <a href="https://github.com/laiifuu"
-            ><img src="images/github.png" alt="github icon" class="icon"
+            ><img src="images/github.png" alt="see github profile" class="icon"
           /></a>
         </li>
         <li>
           <a href="#"
-            ><img src="images/angellist.png" alt="angellist icon" class="icon"
+            ><img
+              src="images/angellist.png"
+              alt="see angellist profile"
+              class="icon"
           /></a>
         </li>
       </ul>
@@ -79,7 +88,7 @@
     <section id="projects" class="grid-container">
       <h1>My Recent Works</h1>
       <div class="indicator"></div>
-      <article class="project-card box-shadow" >
+      <article class="project-card box-shadow">
         <div class="image-placeholder"></div>
         <div class="card-info">
           <h2>Multi-Post Stories Gain+Glory</h2>
@@ -234,13 +243,9 @@
       <button class="call-to-action" type="submit">Get My Resume</button>
     </section>
 
-    <section id="skills">
+    <section id="skills" class="flex-container">
       <div class="skills-card">
-        <img
-          src="images/icon-languages.png"
-          alt="Languages icon"
-          class="skills-icon"
-        />
+        <img src="images/icon-languages.png" alt="" class="skills-icon" />
         <h2>Languages</h2>
         <ul class="flex-container categories">
           <li class="category">JavaScript</li>
@@ -251,11 +256,7 @@
       </div>
 
       <div class="skills-card">
-        <img
-          src="images/icon-frameworks.png"
-          alt="Fraweworks icon"
-          class="skills-icon"
-        />
+        <img src="images/icon-frameworks.png" alt="" class="skills-icon" />
         <h2>Frameworks</h2>
         <ul class="flex-container categories">
           <li class="category">Bootstrap</li>
@@ -267,11 +268,7 @@
       </div>
 
       <div class="skills-card">
-        <img
-          src="images/icon-skills.png"
-          alt="Skills icon"
-          class="skills-icon"
-        />
+        <img src="images/icon-skills.png" alt="" class="skills-icon" />
         <h2>Skills</h2>
         <ul class="flex-container categories">
           <li class="category">Codekit</li>
@@ -284,45 +281,75 @@
     </section>
 
     <section id="contact-section" class="flex-container">
-      <h1>
+      <p>
         I'm always interested in hearing about new projects, so if you'd like to
         chat please get in touch.
-      </h1>
+      </p>
 
       <form action="https://formspree.io/f/xeqdoera" method="POST">
-        <input type="text" name="fullname" id="fullname" placeholder="Full name" maxlength="30" required>
-        <input type="email" name="email" id="email" placeholder="Email address" required>
-        <textarea name="message" id="massage" maxlength="500" placeholder="Enter text here" required ></textarea>
+        <label for="fullname">Full Name</label>
+        <input
+          type="text"
+          name="fullname"
+          id="fullname"
+          placeholder="Full name*"
+          maxlength="30"
+          required
+        />
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email address*"
+          required
+        />
+        <label for="massage">Message</label>
+        <textarea
+          name="message"
+          id="massage"
+          maxlength="500"
+          placeholder="Enter text here*"
+          required
+        ></textarea>
         <button class="call-to-action" type="submit">Get in touch</button>
       </form>
-
     </section>
 
     <footer class="flex-container">
       <ul class="flex-container social-media">
         <li>
           <a href="https://twitter.com/hayet_fe">
-            <img src="images/twitter.png" alt="twiiter icon" class="icon"
+            <img
+              src="images/twitter.png"
+              alt="see twitter profile"
+              class="icon"
           /></a>
         </li>
         <li>
           <a href="https://www.linkedin.com/in/hayet-f-5b4347247/"
-            ><img src="images/linkedin.png" alt="linkedin icon" class="icon"
+            ><img
+              src="images/linkedin.png"
+              alt="see linkedin profile"
+              class="icon"
           /></a>
         </li>
         <li>
           <a href="#">
-            <img src="images/medium.png" alt="medium icon" class="icon"
+            <img src="images/medium.png" alt="see medium profile" class="icon"
           /></a>
         </li>
         <li>
           <a href="https://github.com/laiifuu"
-            ><img src="images/github.png" alt="github icon" class="icon"
+            ><img src="images/github.png" alt="see github profile" class="icon"
           /></a>
         </li>
         <li>
           <a href="#"
-            ><img src="images/angellist.png" alt="angellist icon" class="icon"
+            ><img
+              src="images/angellist.png"
+              alt="see angellist profile"
+              class="icon"
           /></a>
         </li>
       </ul>
