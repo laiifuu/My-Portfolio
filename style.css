@@ -293,6 +293,10 @@ footer > .social-media {
   margin-top: 0;
 }
 
+label {
+  display: none;
+}
+
 @media screen and (min-width: 430px) {
   #logo-placeholder,
   #burger-menu {
