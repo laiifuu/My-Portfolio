@@ -41,7 +41,7 @@ p {
 }
 
 .call-to-action {
-  background-color: #36b37e;
+  background-color: #335b4e;
   border: 0;
   color: #fff;
   border-radius: 4px;
@@ -108,7 +108,7 @@ after i put the burger menu inside a navbar */
   }
 
   to {
-    color: #008552;
+    color: #335b4e;
   }
 }
 
@@ -221,7 +221,7 @@ after i put the burger menu inside a navbar */
 
 .skills-card > ul > li {
   background-color: #fff;
-  color: #36b37e;
+  color: #335b4e;
   font-weight: 600;
 }
 
