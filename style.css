@@ -64,8 +64,10 @@ p {
 header {
   justify-content: space-between;
   align-items: center;
-  margin: 24px;
+  padding: 24px;
   color: #28352f;
+  position: relative;
+  border: 2px solid orange;
 }
 
 ul {
@@ -86,7 +88,24 @@ li {
 }
 
 #nav_list {
-  display: none;
+  border: 1px solid red;
+  background: #fff;
+  display: block;
+  position: absolute;
+  top: -24px;
+  left: 0;
+  height: 100vh;
+  padding-top: 100px;
+  padding-left: 24px;
+  z-index: 0;
+  border-radius: 0 0 48px 48px;
+}
+
+.nav-link {
+  color: #3a4a42;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 40px;
 }
 
 /* i added this to remove some white space that appeared
@@ -95,6 +114,8 @@ after i put the burger menu inside a navbar */
   background: none;
   border: none;
   display: block;
+  position: relative;
+  z-index: 1;
 }
 
 .green {
