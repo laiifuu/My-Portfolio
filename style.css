@@ -87,7 +87,11 @@ li {
   font-weight: 500;
 }
 
-#nav_list {
+.hidden {
+  display: none;
+} 
+
+.toggled-menu {
   border: 1px solid red;
   background: #fff;
   display: block;
@@ -107,6 +111,9 @@ li {
   font-weight: 600;
   margin-bottom: 40px;
 }
+
+
+
 
 /* i added this to remove some white space that appeared
 after i put the burger menu inside a navbar */
