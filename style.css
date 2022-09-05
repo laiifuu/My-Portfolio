@@ -85,13 +85,15 @@ li {
   font-weight: 500;
 }
 
-#nav_menu {
+#nav_list {
   display: none;
 }
 
 /* i added this to remove some white space that appeared
 after i put the burger menu inside a navbar */
 #burger-menu {
+  background: none;
+  border: none;
   display: block;
 }
 
@@ -309,7 +311,7 @@ label {
     align-content: center;
   }
 
-  #nav_menu {
+  #nav_list {
     display: flex;
   }
 
