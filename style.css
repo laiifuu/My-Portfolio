@@ -12,6 +12,7 @@ html {
 
 body {
   margin: 0;
+  position: relative;
 }
 
 a {
@@ -66,7 +67,6 @@ header {
   align-items: center;
   padding: 24px;
   color: #28352f;
-  position: relative;
   border: 2px solid orange;
 }
 
