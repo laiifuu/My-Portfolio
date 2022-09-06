@@ -8,6 +8,7 @@
 
 - HTML
 - CSS
+- JavaScript
 
 ## Live Demo
 
@@ -28,11 +29,12 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
-Click on the "Code" button, a dropdown list will appear, click on "Download ZIP".
+Assuming you have git installed on your computer, please follow the steps below: 
+- Create a folder
+- Navigate to that folder in the command line using the `cd` command
+- Clone the repository using the following command: `git clone https://github.com/laiifuu/My-Portfolio.git`
 
-### Deployment
-
-Extract the project folder from the downloaded ZIP file, then open it, you will find a file named index.html, open it with your browser. 
+You will now be able to check the project with your code editor.
 
 ## Authors
 
@@ -41,6 +43,12 @@ Extract the project folder from the downloaded ZIP file, then open it, you will 
 - GitHub: [@laiifuu](https://github.com/laiifuu)
 - Twitter: [@hayet_fe](https://twitter.com/hayet_fe)
 - LinkedIn: [Hayet Fellah](https://www.linkedin.com/in/hayet-f-5b4347247)
+
+👤 **Adel Guitoun**
+
+- GitHub: [@adel-gu](https://github.com/adel-gu)
+- Twitter: [@GuitounAdel](https://twitter.com/@GuitounAdel)
+- LinkedIn: [adelguitoun](https://linkedin.com/in/adelguitoun)
 
 ## 🤝 Contributing
 
@@ -54,5 +62,8 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
+
+
+
 
 

@@ -12,6 +12,7 @@ html {
 
 body {
   margin: 0;
+  position: relative;
 }
 
 a {
@@ -64,7 +65,7 @@ p {
 header {
   justify-content: space-between;
   align-items: center;
-  margin: 24px;
+  padding: 24px;
   color: #28352f;
 }
 
@@ -85,14 +86,42 @@ li {
   font-weight: 500;
 }
 
-#nav_menu {
+.hidden {
   display: none;
 }
 
-/* i added this to remove some white space that appeared
-after i put the burger menu inside a navbar */
-#burger-menu {
+.overflow {
+  overflow: hidden;
+}
+
+.toggled-menu {
+  background: #fff;
   display: block;
+  position: absolute;
+  top: -24px;
+  left: 0;
+  height: 100%;
+  padding-top: 100px;
+  padding-left: 24px;
+  z-index: 0;
+  border-radius: 0 0 48px 48px;
+}
+
+.nav-link {
+  color: #3a4a42;
+  display: block;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 44px;
+}
+
+#burger-menu {
+  background: none;
+  border: none;
+  display: block;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
 }
 
 .green {
@@ -113,7 +142,7 @@ after i put the burger menu inside a navbar */
 }
 
 /* styling the headline section */
-#headline {
+.headline {
   flex-direction: column;
   align-items: center;
   padding: 58px 24px 24px 24px;
@@ -152,8 +181,8 @@ after i put the burger menu inside a navbar */
   margin: 24px auto 62px auto;
 }
 
-#projects,
-#skills {
+.projects,
+.skills {
   padding: 24px;
   text-align: center;
   gap: 24px;
@@ -191,7 +220,7 @@ after i put the burger menu inside a navbar */
 }
 
 /* styling the about me section */
-#about-me {
+.about-me {
   background-image: url("images/aboutme-illustration-mobile.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -201,7 +230,7 @@ after i put the burger menu inside a navbar */
 
 /* styling the skills section */
 
-#skills {
+.skills {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
@@ -227,7 +256,7 @@ after i put the burger menu inside a navbar */
 }
 
 /* styling the contact me section */
-#contact-section {
+.contact-section {
   flex-direction: column;
   padding: 24px;
   justify-content: center;
@@ -237,7 +266,7 @@ after i put the burger menu inside a navbar */
   background-position: 100% 100%;
 }
 
-#contact-section > p {
+.contact-section > p {
   font-size: 30px;
   font-weight: 700;
   line-height: 58px;
@@ -309,7 +338,7 @@ label {
     align-content: center;
   }
 
-  #nav_menu {
+  .nav_list {
     display: flex;
   }
 
@@ -322,20 +351,15 @@ label {
     font-weight: 600;
   }
 
-  #headline {
+  .headline {
     justify-content: space-between;
     align-items: center;
     gap: 24px;
     padding-top: 30%;
   }
 
-  #headline > * {
+  .headline > * {
     margin: 0;
-  }
-
-  #headline button {
-    align-self: bottom;
-    justify-content: bottom;
   }
 }
 
@@ -344,17 +368,17 @@ label {
     display: none;
   }
 
-  #projects {
+  .projects {
     margin-top: 0;
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
 
-  #projects > h1 {
+  .projects > h1 {
     grid-column: span 2;
   }
 
-  #skills {
+  .skills {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -414,7 +438,7 @@ label {
   }
 
   /* styling the headline section */
-  #headline {
+  .headline {
     padding: 0 10% 0 10%;
     background-image: none;
     height: 600px;
@@ -424,7 +448,7 @@ label {
     justify-content: center;
   }
 
-  #headline > h1,
+  .headline > h1,
   p,
   .social-media {
     margin: 0;
@@ -437,7 +461,7 @@ label {
   }
 
   /* styling the projects section */
-  #projects {
+  .projects {
     width: 80%;
     margin: 0 auto 0 auto;
     padding: 0;
@@ -449,17 +473,17 @@ label {
     display: none;
   }
 
-  #projects > h1,
-  #about-me > h1 {
+  .projects > h1,
+  .about-me > h1 {
     font-size: 40px;
     margin: 0;
   }
 
-  #projects > h1 {
+  .projects > h1 {
     grid-column: span 3;
   }
 
-  #about-me {
+  .about-me {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -474,11 +498,11 @@ label {
     background-size: 15%, 15%;
   }
 
-  #about-me > * {
+  .about-me > * {
     margin: 12px 0 12px 0;
   }
 
-  #skills {
+  .skills {
     width: 80%;
     margin: 0 auto 0 auto;
     display: flex;
@@ -490,7 +514,7 @@ label {
   }
 
   /* styling the contact section */
-  #contact-section {
+  .contact-section {
     width: 100%;
     margin-top: 80px;
     padding: 0 10% 0 10%;
@@ -512,12 +536,12 @@ label {
     display: none;
   }
 
-  #contact-section > p {
-    font-size: 30;
+  .contact-section > p {
+    font-size: 30px;
     width: 35%;
   }
 
-  #contact-section > .social-media {
+  .contact-section > .social-media {
     width: 100%;
     margin-top: 220px;
   }
@@ -541,7 +565,7 @@ label {
 }
 
 @media screen and (min-width: 1360px) {
-  #projects {
+  .projects {
     margin-top: 400px;
   }
 }
