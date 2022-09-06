@@ -67,7 +67,6 @@ header {
   align-items: center;
   padding: 24px;
   color: #28352f;
-  border: 2px solid orange;
 }
 
 ul {
@@ -89,10 +88,13 @@ li {
 
 .hidden {
   display: none;
-} 
+}
+
+.overflow {
+  overflow: hidden;
+}
 
 .toggled-menu {
-  border: 1px solid red;
   background: #fff;
   display: block;
   position: absolute;
@@ -107,13 +109,12 @@ li {
 
 .nav-link {
   color: #3a4a42;
+  display: block;
   font-size: 32px;
   font-weight: 600;
   margin-bottom: 40px;
+  /* border: 2px solid red; */
 }
-
-
-
 
 /* i added this to remove some white space that appeared
 after i put the burger menu inside a navbar */
