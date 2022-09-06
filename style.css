@@ -141,7 +141,7 @@ li {
 }
 
 /* styling the headline section */
-#headline {
+.headline {
   flex-direction: column;
   align-items: center;
   padding: 58px 24px 24px 24px;
@@ -180,8 +180,8 @@ li {
   margin: 24px auto 62px auto;
 }
 
-#projects,
-#skills {
+.projects,
+.skills {
   padding: 24px;
   text-align: center;
   gap: 24px;
@@ -219,7 +219,7 @@ li {
 }
 
 /* styling the about me section */
-#about-me {
+.about-me {
   background-image: url("images/aboutme-illustration-mobile.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -229,7 +229,7 @@ li {
 
 /* styling the skills section */
 
-#skills {
+.skills {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
@@ -255,7 +255,7 @@ li {
 }
 
 /* styling the contact me section */
-#contact-section {
+.contact-section {
   flex-direction: column;
   padding: 24px;
   justify-content: center;
@@ -265,7 +265,7 @@ li {
   background-position: 100% 100%;
 }
 
-#contact-section > p {
+.contact-section > p {
   font-size: 30px;
   font-weight: 700;
   line-height: 58px;
@@ -337,7 +337,7 @@ label {
     align-content: center;
   }
 
-  #nav_list {
+  .nav_list {
     display: flex;
   }
 
@@ -350,14 +350,14 @@ label {
     font-weight: 600;
   }
 
-  #headline {
+  .headline {
     justify-content: space-between;
     align-items: center;
     gap: 24px;
     padding-top: 30%;
   }
 
-  #headline > * {
+  .headline > * {
     margin: 0;
   }
 }
@@ -367,17 +367,17 @@ label {
     display: none;
   }
 
-  #projects {
+  .projects {
     margin-top: 0;
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
 
-  #projects > h1 {
+  .projects > h1 {
     grid-column: span 2;
   }
 
-  #skills {
+  .skills {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -437,7 +437,7 @@ label {
   }
 
   /* styling the headline section */
-  #headline {
+  .headline {
     padding: 0 10% 0 10%;
     background-image: none;
     height: 600px;
@@ -447,7 +447,7 @@ label {
     justify-content: center;
   }
 
-  #headline > h1,
+  .headline > h1,
   p,
   .social-media {
     margin: 0;
@@ -460,7 +460,7 @@ label {
   }
 
   /* styling the projects section */
-  #projects {
+  .projects {
     width: 80%;
     margin: 0 auto 0 auto;
     padding: 0;
@@ -472,17 +472,17 @@ label {
     display: none;
   }
 
-  #projects > h1,
-  #about-me > h1 {
+  .projects > h1,
+  .about-me > h1 {
     font-size: 40px;
     margin: 0;
   }
 
-  #projects > h1 {
+  .projects > h1 {
     grid-column: span 3;
   }
 
-  #about-me {
+  .about-me {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -497,11 +497,11 @@ label {
     background-size: 15%, 15%;
   }
 
-  #about-me > * {
+  .about-me > * {
     margin: 12px 0 12px 0;
   }
 
-  #skills {
+  .skills {
     width: 80%;
     margin: 0 auto 0 auto;
     display: flex;
@@ -513,7 +513,7 @@ label {
   }
 
   /* styling the contact section */
-  #contact-section {
+  .contact-section {
     width: 100%;
     margin-top: 80px;
     padding: 0 10% 0 10%;
@@ -535,12 +535,12 @@ label {
     display: none;
   }
 
-  #contact-section > p {
+  .contact-section > p {
     font-size: 30px;
     width: 35%;
   }
 
-  #contact-section > .social-media {
+  .contact-section > .social-media {
     width: 100%;
     margin-top: 220px;
   }
@@ -564,7 +564,7 @@ label {
 }
 
 @media screen and (min-width: 1360px) {
-  #projects {
+  .projects {
     margin-top: 400px;
   }
 }
