@@ -100,7 +100,7 @@ li {
   position: absolute;
   top: -24px;
   left: 0;
-  height: 100vh;
+  height: 100%;
   padding-top: 100px;
   padding-left: 24px;
   z-index: 0;
@@ -113,12 +113,8 @@ li {
   font-size: 32px;
   font-weight: 600;
   margin-bottom: 40px;
-
-  /* border: 2px solid red; */
 }
 
-/* i added this to remove some white space that appeared
-after i put the burger menu inside a navbar */
 #burger-menu {
   background: none;
   border: none;
