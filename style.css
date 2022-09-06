@@ -113,6 +113,7 @@ li {
   font-size: 32px;
   font-weight: 600;
   margin-bottom: 40px;
+
   /* border: 2px solid red; */
 }
 
@@ -364,10 +365,6 @@ label {
     margin: 0;
   }
 
-  #headline button {
-    align-self: bottom;
-    justify-content: bottom;
-  }
 }
 
 @media screen and (min-width: 600px) {
@@ -544,7 +541,7 @@ label {
   }
 
   #contact-section > p {
-    font-size: 30;
+    font-size: 30px;
     width: 35%;
   }
 
