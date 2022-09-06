@@ -30,3 +30,16 @@ menuLinks.forEach((link) => {
     body.classList.remove('overflow');
   });
 });
+
+window.addEventListener('resize', () => {
+  const query = window.matchMedia('(min-width: 430px)');
+  if (query.matches) {
+    img.setAttribute('data-toggled', 'false');
+    img.src = 'images/burger-menu.png';
+    menu.classList.remove('toggled-menu');
+    menuLinks.forEach((link) => {
+      link.classList.remove('nav-link');
+    });
+    body.classList.remove('overflow');
+  }
+}, true);
