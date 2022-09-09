@@ -56,9 +56,23 @@ p {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
+.error {
+  color: red;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.red-border {
+  border: 1px solid red;
+}
+
 .call-to-action:active {
   background-color: #008552;
   box-shadow: none;
+}
+
+.border-radius-8 {
+  border-radius: 8px;
 }
 
 /* styling the header */
@@ -190,17 +204,26 @@ li {
 
 /* styling the project card */
 .project-card {
-  border-radius: 8px;
+  border-radius: 8px 8px;
   border: 1px solid #d0d9d4;
+  flex-direction: column;
 }
 
-.image-placeholder {
-  height: 250px;
-  background-color: #ebf0ee;
+picture > img {
+  width: 100%;
+  height: auto;
+}
+
+.image-placeholder > img {
+  width: 100%;
+  height: auto;
 }
 
 .card-info {
   border-radius: 8px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .categories {
@@ -213,6 +236,78 @@ li {
   padding: 12px 8px 12px 8px;
   font-size: 12px;
   border-radius: 4px;
+}
+
+.popup {
+  z-index: 10;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  box-shadow: 0 0 0 50rem rgba(193, 199, 208, 0.8);
+  width: 90%;
+  margin: 20px auto 20px auto;
+  height: 95vh;
+  padding: 16px;
+  overflow-y: auto;
+  text-align: left;
+}
+
+.popup-button {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  flex: 1;
+}
+
+.button-icon {
+  margin: 0 10px 0 10px;
+  width: 20px;
+}
+
+.exit-button {
+  display: none;
+  border: 1px solid #ebecf0;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  padding: 8px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.exit-button-white {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  padding: 8px;
+  margin: 0.7rem;
+  right: 0.5rem;
+  top: 0.5rem;
+  cursor: pointer;
+}
+
+.buttons-div {
+  justify-content: space-between;
+  width: 100%;
+  order: 1;
+  gap: 10px;
+}
+
+.popup p {
+  flex: 1;
+}
+
+.popup .card-info {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.justify-content-start {
+  justify-content: flex-start;
 }
 
 .card-info > ul > li {
@@ -389,12 +484,12 @@ label {
   }
 
   .box-shadow {
-    box-shadow: none;
     transition: box-shadow 0.3s ease-in-out;
   }
 
   .box-shadow:hover {
     box-shadow: 0 5px 15px 2px #008552;
+    border: none;
   }
 }
 
@@ -469,6 +564,42 @@ label {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
+  .popup .card-info h2 {
+    flex: 0.6;
+  }
+
+  footer > p {
+    display: none;
+  }
+
+  .popup p,
+  .popup .categories {
+    order: 1;
+  }
+
+  .popup {
+    width: 75%;
+  }
+
+  .buttons-div {
+    flex: 0.4;
+  }
+
+  .popup-button {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    flex: 2;
+  }
+
+  .exit-button {
+    display: block;
+  }
+
+  .exit-button-white {
+    display: none;
+  }
+
   .indicator {
     display: none;
   }
@@ -530,10 +661,6 @@ label {
     background-size: 15%, 10%, 15%;
     background-position: 0 100%, 30% 90%, 100% 100%;
     padding-bottom: 250px;
-  }
-
-  footer > p {
-    display: none;
   }
 
   .contact-section > p {

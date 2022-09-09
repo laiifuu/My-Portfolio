@@ -20,7 +20,7 @@
 
       <nav>
         <button id="burger-menu" type="button">
-          <img src="images/burger-menu.png" alt="menu" data-toggled = "false"/>
+          <img src="images/burger-menu.png" alt="menu" data-toggled="false" />
         </button>
 
         <ul id="nav_list" class="flex-container hidden nav_list">
@@ -88,153 +88,7 @@
       <button id="next" type="submit"></button>
     </section>
 
-    <section id="projects" class="grid-container projects">
-      <h1>My Recent Works</h1>
-      <div class="indicator"></div>
-      <article class="project-card box-shadow">
-        <div class="image-placeholder"></div>
-        <div class="card-info">
-          <h2>Multi-Post Stories Gain+Glory</h2>
-          <ul class="categories flex-container">
-            <li class="category">
-              <a href="https://github.com/topics/ruby-on-rails"
-                >Ruby on Rails</a
-              >
-            </li>
-            <li class="category">
-              <a href="https://github.com/topics/css">css</a>
-            </li>
-            <li class="category">
-              <a href="https://github.com/topics/html">html</a>
-            </li>
-            <li class="category">
-              <a href="https://github.com/topics/javascript">JavaScript</a>
-            </li>
-          </ul>
-          <button class="call-to-action" type="submit">See Project</button>
-        </div>
-      </article>
-
-      <article class="project-card box-shadow">
-        <div class="image-placeholder"></div>
-        <div class="card-info">
-          <h2>Multi-Post Stories Gain+Glory</h2>
-          <ul class="categories flex-container">
-            <li class="category">
-              <a href="https://github.com/topics/ruby-on-rails"
-                >Ruby on Rails</a
-              >
-            </li>
-            <li class="category">
-              <a href="https://github.com/topics/css">css</a>
-            </li>
-            <li class="category">
-              <a href="https://github.com/topics/html">html</a>
-            </li>
-            <li class="category">
-              <a href="https://github.com/topics/javascript">JavaScript</a>
-            </li>
-          </ul>
-          <button class="call-to-action" type="submit">See Project</button>
-        </div>
-      </article>
-
-      <article class="project-card box-shadow">
-        <div class="image-placeholder"></div>
-        <div class="card-info">
-          <h2>Multi-Post Stories Gain+Glory</h2>
-          <ul class="categories flex-container">
-            <li class="category">
-              <a href="https://github.com/topics/ruby-on-rails"
-                >Ruby on Rails</a
-              >
-            </li>
-            <li class="category">
-              <a href="https://github.com/topics/css">css</a>
-            </li>
-            <li class="category">
-              <a href="https://github.com/topics/html">html</a>
-            </li>
-            <li class="category">
-              <a href="https://github.com/topics/javascript">JavaScript</a>
-            </li>
-          </ul>
-          <button class="call-to-action" type="submit">See Project</button>
-        </div>
-      </article>
-
-      <article class="project-card box-shadow">
-        <div class="image-placeholder"></div>
-        <div class="card-info">
-          <h2>Multi-Post Stories Gain+Glory</h2>
-          <ul class="categories flex-container">
-            <li class="category">
-              <a href="https://github.com/topics/ruby-on-rails"
-                >Ruby on Rails</a
-              >
-            </li>
-            <li class="category">
-              <a href="https://github.com/topics/css">css</a>
-            </li>
-            <li class="category">
-              <a href="https://github.com/topics/html">html</a>
-            </li>
-            <li class="category">
-              <a href="https://github.com/topics/javascript">JavaScript</a>
-            </li>
-          </ul>
-          <button class="call-to-action" type="submit">See Project</button>
-        </div>
-      </article>
-
-      <article class="project-card box-shadow">
-        <div class="image-placeholder"></div>
-        <div class="card-info">
-          <h2>Multi-Post Stories Gain+Glory</h2>
-          <ul class="categories flex-container">
-            <li class="category">
-              <a href="https://github.com/topics/ruby-on-rails"
-                >Ruby on Rails</a
-              >
-            </li>
-            <li class="category">
-              <a href="https://github.com/topics/css">css</a>
-            </li>
-            <li class="category">
-              <a href="https://github.com/topics/html">html</a>
-            </li>
-            <li class="category">
-              <a href="https://github.com/topics/javascript">JavaScript</a>
-            </li>
-          </ul>
-          <button class="call-to-action" type="submit">See Project</button>
-        </div>
-      </article>
-
-      <article class="project-card box-shadow">
-        <div class="image-placeholder"></div>
-        <div class="card-info">
-          <h2>Multi-Post Stories Gain+Glory</h2>
-          <ul class="categories flex-container">
-            <li class="category">
-              <a href="https://github.com/topics/ruby-on-rails"
-                >Ruby on Rails</a
-              >
-            </li>
-            <li class="category">
-              <a href="https://github.com/topics/css">css</a>
-            </li>
-            <li class="category">
-              <a href="https://github.com/topics/html">html</a>
-            </li>
-            <li class="category">
-              <a href="https://github.com/topics/javascript">JavaScript</a>
-            </li>
-          </ul>
-          <button class="call-to-action" type="submit">See Project</button>
-        </div>
-      </article>
-    </section>
+    <section id="projects" class="grid-container projects"></section>
 
     <section id="about-me" class="about-me">
       <h1>About me</h1>
@@ -290,8 +144,8 @@
       </p>
 
       <form action="https://formspree.io/f/xeqdoera" method="POST">
-        <label for="fullname">Full Name</label>
         <input
+          aria-label="Full Name"
           type="text"
           name="fullname"
           id="fullname"
@@ -299,23 +153,28 @@
           maxlength="30"
           required
         />
-        <label for="email">Email</label>
+
         <input
+          aria-label="Email"
           type="email"
           name="email"
           id="email"
           placeholder="Email address*"
           required
         />
-        <label for="massage">Message</label>
+
         <textarea
+          aria-label="Message"
           name="message"
           id="message"
           maxlength="500"
           placeholder="Enter text here*"
           required
         ></textarea>
-        <button class="call-to-action" type="submit">Get in touch</button>
+        <div>
+          <button class="call-to-action" type="submit">Get in touch</button>
+          <span class="error"></span>
+        </div>
       </form>
     </section>
 
@@ -363,5 +222,4 @@
 
     <script src="main.js"></script>
   </body>
-
 </html>
