@@ -111,14 +111,14 @@ function createProjectCard(obj) {
 
   const imgPlaceholder = document.createElement("div");
   imgPlaceholder.classList.add("image-placeholder");
-  imgPlaceholder.classList.add('border-radius-8');
+  imgPlaceholder.classList.add("border-radius-8");
   const cardInfo = document.createElement("div");
   cardInfo.classList.add("card-info");
   cardInfo.classList.add("flex-container");
 
   const projectIllustration = document.createElement("img");
   projectIllustration.src = "images/project-illustration-mobile.jpg";
-  projectIllustration.classList.add('border-radius-8');
+  projectIllustration.classList.add("border-radius-8");
   imgPlaceholder.appendChild(projectIllustration);
 
   const cardTitle = document.createElement("h2");
@@ -200,16 +200,16 @@ function createPopup(obj) {
   const imgPlaceholder = document.createElement("div");
   imgPlaceholder.classList.add("image-placeholder");
 
-  let picture = document.createElement('picture'); 
-  let source = document.createElement('source'); 
-  source.media = '(min-width: 768px)'; 
-  source.srcset = 'images/project-illustration-desktop.png';
-  picture.append(source); 
- 
+  let picture = document.createElement("picture");
+  let source = document.createElement("source");
+  source.media = "(min-width: 768px)";
+  source.srcset = "images/project-illustration-desktop.png";
+  picture.append(source);
+
   const projectIllustration = document.createElement("img");
-  projectIllustration.src = "images/project-illustration-mobile.jpg"
-  
-  picture.append(projectIllustration); 
+  projectIllustration.src = "images/project-illustration-mobile.jpg";
+
+  picture.append(projectIllustration);
 
   window.addEventListener("resize", () => {
     const query = window.matchMedia("(min-width: 768px)");
@@ -292,8 +292,8 @@ const array = createProjectsList(
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     "url",
     ["Ruby on Rails", "html", "css", "JavaScript"],
-    "demo link here",
-    "src link here",
+    "https://laiifuu.github.io/My-Portfolio/",
+    "https://github.com/laiifuu/My-Portfolio",
   ],
   6
 );
