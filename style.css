@@ -61,7 +61,7 @@ p {
   box-shadow: none;
 }
 
-.border-radius-8{
+.border-radius-8 {
   border-radius: 8px;
 }
 
@@ -199,6 +199,11 @@ li {
   flex-direction: column;
 }
 
+picture > img {
+  width: 100%;
+  height: auto;
+}
+
 .image-placeholder > img {
   width: 100%;
   height: auto;
@@ -252,11 +257,6 @@ li {
   width: 20px;
 }
 
-picture > img {
-  width: 100%; 
-  height: auto;
-}
-
 .exit-button {
   display: none;
   border: 1px solid #ebecf0;
@@ -267,7 +267,7 @@ picture > img {
   cursor: pointer;
 }
 
-.exit-button-white{
+.exit-button-white {
   position: absolute;
   background-color: transparent;
   border: none;
@@ -582,11 +582,11 @@ label {
     flex: 2;
   }
 
-  .exit-button{
+  .exit-button {
     display: block;
   }
 
-  .exit-button-white{
+  .exit-button-white {
     display: none;
   }
 
