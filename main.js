@@ -43,3 +43,26 @@ window.addEventListener('resize', () => {
     body.classList.remove('overflow');
   }
 }, true);
+
+const form = document.querySelector("form");
+const email = document.querySelector("#email");
+const error = document.querySelector(".error");
+const username = document.querySelector("#fullname");
+const msg = document.querySelector("#message");
+
+form.addEventListener("submit", (e) => {
+  if (email.value != email.value.toLowerCase()) {
+    e.preventDefault();
+    error.innerHTML = "";
+    email.classList.add("red-border");
+    const msg = document.createTextNode(
+      "Your email should be in all lowercase*"
+    );
+    error.append(msg);
+  } else {
+    email.classList.remove("red-border");
+    error.innerHTML = "";
+  }
+});
+
+
