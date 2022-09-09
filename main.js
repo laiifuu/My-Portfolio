@@ -1,81 +1,80 @@
-const button = document.getElementById("burger-menu");
-const menu = document.querySelector("#nav_list");
+const button = document.getElementById('burger-menu');
+const menu = document.querySelector('#nav_list');
 const menuLinks = [...menu.children];
-const img = button.querySelector("img");
-const body = document.querySelector("body");
+const img = button.querySelector('img');
+const body = document.querySelector('body');
 
-button.addEventListener("click", () => {
-  if (img.getAttribute("data-toggled") === "false") {
-    img.src = "images/exit-menu.svg";
-    img.setAttribute("data-toggled", "true");
+button.addEventListener('click', () => {
+  if (img.getAttribute('data-toggled') === 'false') {
+    img.src = 'images/exit-menu.svg';
+    img.setAttribute('data-toggled', 'true');
   } else {
-    img.src = "images/burger-menu.png";
-    img.setAttribute("data-toggled", "false");
+    img.src = 'images/burger-menu.png';
+    img.setAttribute('data-toggled', 'false');
   }
-  menu.classList.toggle("toggled-menu");
+  menu.classList.toggle('toggled-menu');
   menuLinks.forEach((item) => {
-    item.classList.toggle("nav-link");
+    item.classList.toggle('nav-link');
   });
-  body.classList.toggle("overflow");
+  body.classList.toggle('overflow');
 });
 
 menuLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    menu.classList.remove("toggled-menu");
-    img.setAttribute("src", "images/burger-menu.png");
-    img.setAttribute("data-toggled", "false");
+  link.addEventListener('click', () => {
+    menu.classList.remove('toggled-menu');
+    img.setAttribute('src', 'images/burger-menu.png');
+    img.setAttribute('data-toggled', 'false');
     menuLinks.forEach((link) => {
-      link.classList.remove("nav-link");
+      link.classList.remove('nav-link');
     });
-    body.classList.remove("overflow");
+    body.classList.remove('overflow');
   });
 });
 
 window.addEventListener(
-  "resize",
+  'resize',
   () => {
-    const query = window.matchMedia("(min-width: 430px)");
+    const query = window.matchMedia('(min-width: 430px)');
     if (query.matches) {
-      img.setAttribute("data-toggled", "false");
-      img.src = "images/burger-menu.png";
-      menu.classList.remove("toggled-menu");
+      img.setAttribute('data-toggled', 'false');
+      img.src = 'images/burger-menu.png';
+      menu.classList.remove('toggled-menu');
       menuLinks.forEach((link) => {
-        link.classList.remove("nav-link");
+        link.classList.remove('nav-link');
       });
-      body.classList.remove("overflow");
+      body.classList.remove('overflow');
     }
   },
-  true
+  true,
 );
 
-const form = document.querySelector("form");
-const email = document.querySelector("#email");
-const username = document.querySelector("#fullname");
-const msg = document.querySelector("#message");
+const email = document.querySelector('#email');
+const username = document.querySelector('#fullname');
+const msg = document.querySelector('#message');
 const userInfo = {};
 
-window.addEventListener("load", () => {
-  localStorage.getItem("user_info");
-  const userInfoDeserilized = JSON.parse(localStorage.getItem("user_info"));
+window.addEventListener('load', () => {
+  localStorage.getItem('user_info');
+  const userInfoDeserilized = JSON.parse(localStorage.getItem('user_info'));
   username.value = userInfoDeserilized.username;
   email.value = userInfoDeserilized.email;
   msg.value = userInfoDeserilized.message;
 });
 
-username.addEventListener("input", () => {
+username.addEventListener('input', () => {
   userInfo.username = username.value;
   const serializedUserInfo = JSON.stringify(userInfo);
-  localStorage.setItem("user_info", serializedUserInfo);
+  localStorage.setItem('user_info', serializedUserInfo);
 });
 
-email.addEventListener("input", () => {
+email.addEventListener('input', () => {
   userInfo.email = email.value;
   const serializedUserInfo = JSON.stringify(userInfo);
-  localStorage.setItem("user_info", serializedUserInfo);
+  localStorage.setItem('user_info', serializedUserInfo);
 });
 
-msg.addEventListener("input", () => {
+msg.addEventListener('input', () => {
   userInfo.message = msg.value;
   const serializedUserInfo = JSON.stringify(userInfo);
-  localStorage.setItem("user_info", serializedUserInfo);
+  localStorage.setItem('user_info', serializedUserInfo);
 });
