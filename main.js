@@ -308,11 +308,10 @@ array.forEach((obj) => {
 // append the projects to the section:
 appendProjects(projectCards);
 
-const form = document.querySelector('form');
 const email = document.querySelector('#email');
 const error = document.querySelector('.error');
-const username = document.querySelector('#fullname');
-const msg = document.querySelector('#message');
+const username = document.querySelector("#fullname");
+const msg = document.querySelector("#message");
 const userInfo = {};
 
 form.addEventListener('submit', (e) => {
@@ -355,3 +354,14 @@ msg.addEventListener('input', () => {
   const serializedUserInfo = JSON.stringify(userInfo);
   localStorage.setItem('user_info', serializedUserInfo);
 });
+
+
+
+
+
+
+
+
+
+
+
