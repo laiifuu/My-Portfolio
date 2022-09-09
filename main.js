@@ -43,3 +43,29 @@ window.addEventListener('resize', () => {
     body.classList.remove('overflow');
   }
 }, true);
+
+const form = document.querySelector("form");
+const email = document.querySelector("#email");
+const username = document.querySelector("#fullname");
+const msg = document.querySelector("#message");
+const userInfo = {};
+
+window.addEventListener("load", () => {
+  localStorage.getItem("user_info");
+  const userInfoDeserilized = JSON.parse(localStorage.getItem("user_info"));
+  username.value = userInfoDeserilized.username;
+  email.value = userInfoDeserilized.email;
+  msg.value = userInfoDeserilized.message;
+});
+
+username.addEventListener("input", () => {
+  userInfo.username = username.value;
+});
+
+email.addEventListener("input", () => {
+  userInfo.email = email.value;
+});
+
+msg.addEventListener("input", () => {
+  userInfo.message = msg.value;
+});
