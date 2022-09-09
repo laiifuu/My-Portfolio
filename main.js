@@ -308,6 +308,7 @@ array.forEach((obj) => {
 // append the projects to the section:
 appendProjects(projectCards);
 
+const form = document.querySelector("form");
 const email = document.querySelector('#email');
 const error = document.querySelector('.error');
 const username = document.querySelector("#fullname");
