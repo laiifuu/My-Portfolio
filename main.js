@@ -311,6 +311,9 @@ appendProjects(projectCards);
 const form = document.querySelector('form');
 const email = document.querySelector('#email');
 const error = document.querySelector('.error');
+const username = document.querySelector('#fullname');
+const msg = document.querySelector('#message');
+const userInfo = {};
 
 form.addEventListener('submit', (e) => {
   if (email.value !== email.value.toLowerCase()) {
@@ -326,3 +329,28 @@ form.addEventListener('submit', (e) => {
     error.innerHTML = '';
   }
 });
+
+window.addEventListener('load', () => {
+  localStorage.getItem('user_info');
+  const userInfoDeserilized = JSON.parse(localStorage.getItem('user_info'));
+  username.value = userInfoDeserilized.username;
+  email.value = userInfoDeserilized.email;
+  msg.value = userInfoDeserilized.message;
+});
+
+username.addEventListener('input', () => {
+  userInfo.username = username.value;
+  const serializedUserInfo = JSON.stringify(userInfo);
+  localStorage.setItem('user_info', serializedUserInfo);
+});
+
+email.addEventListener('input', () => {
+  userInfo.email = email.value;
+  const serializedUserInfo = JSON.stringify(userInfo);
+  localStorage.setItem('user_info', serializedUserInfo);
+});
+
+msg.addEventListener('input', () => {
+  userInfo.message = msg.value;
+  const serializedUserInfo = JSON.stringify(userInfo);
+  localStorage.setItem('user_info', serializedUserInfo);
