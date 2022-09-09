@@ -354,3 +354,4 @@ msg.addEventListener('input', () => {
   userInfo.message = msg.value;
   const serializedUserInfo = JSON.stringify(userInfo);
   localStorage.setItem('user_info', serializedUserInfo);
+});
