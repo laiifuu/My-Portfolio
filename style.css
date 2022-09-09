@@ -56,6 +56,16 @@ p {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
+.error {
+  color: red;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.red-border {
+  border: 1px solid red;
+}
+
 .call-to-action:active {
   background-color: #008552;
   box-shadow: none;
