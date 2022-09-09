@@ -20,7 +20,7 @@
 
       <nav>
         <button id="burger-menu" type="button">
-          <img src="images/burger-menu.png" alt="menu" data-toggled = "false"/>
+          <img src="images/burger-menu.png" alt="menu" data-toggled="false" />
         </button>
 
         <ul id="nav_list" class="flex-container hidden nav_list">
@@ -315,7 +315,10 @@
           placeholder="Enter text here*"
           required
         ></textarea>
-        <button class="call-to-action" type="submit">Get in touch</button>
+        <div>
+          <button class="call-to-action" type="submit">Get in touch</button>
+          <span class="error"></span>
+        </div>
       </form>
     </section>
 
@@ -363,5 +366,4 @@
 
     <script src="main.js"></script>
   </body>
-
 </html>
